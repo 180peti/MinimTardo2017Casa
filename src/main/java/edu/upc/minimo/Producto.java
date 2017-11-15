@@ -8,6 +8,7 @@ public class Producto {
     public Producto(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
+        this.ventas = 0;
     }
 
     public String getNombre() {
@@ -23,6 +24,6 @@ public class Producto {
     }
 
     public void setVentas(int ventas) {
-        this.ventas = ventas;
+        this.ventas = this.ventas + ventas;
     }
 }

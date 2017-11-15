@@ -71,8 +71,9 @@ public class ProductManagerImpl implements ProductManager {
             Pedido a=new Pedido(user, cosas,cantidad);
             usuarios.get(user).añadirPedido(a);
             pedidos.add(a);
+            hecho=true;
         }
-        return false;
+        return hecho;
     }
 
     public String servirPedido() {
